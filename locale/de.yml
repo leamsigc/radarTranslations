@@ -1,0 +1,1064 @@
+actions:
+  comment:
+    create:
+      success:
+        message: Dein Kommentar wurde versendet. Vielen Dank!
+  filter:
+    cancel: Abbrechen
+    helper: Sie können nur Start- oder Enddatum wählen, aber nicht beide.
+    save: Übernehmen
+  report:
+    create:
+      submit: Meldung absenden
+      success:
+        message: Meldung wurde versendet. Vielen Dank!
+        report_created: Meldung erfolgreich erstellt
+    unMerge:
+      success:
+        message: >-
+          Alle duplizierten Berichte werden auf den ursprüglichen Zustand
+          zurückgesetz.
+    update:
+      actions:
+        close: Erledigt
+        update: Aktualisieren!!
+      attachment:
+        formTitle: Meldungsanhang
+      attachmentActive: Meldungsanhang (optional)
+      confirmation:
+        cancel: Abbrechen
+        content: Sind Sie sicher, dass Sie den Anhang entfernen wollen?
+        submit: Weiter
+        title: Bitte bestätigen Sie die nachfolgende Aktion
+      error:
+        empty: Bitte wählen Sie einen neuen Standort aus
+      locationLabel: Bitte wählen Sie einen Ort auf der Karte
+      submit: Änderungen speichern
+    visibility:
+      singleSuccess: Sichtbarkeit des Berichts erfolgreich aktualisiert
+      success: Sichtbarkeit von Berichten erfolgreich aktualisiert
+  save: Speichern
+  cancel: Abbrechen
+admin:
+  commune:
+    email:
+      send:
+        success: Email wurde geschickt. Vielen Dank!
+        tooltip:
+          send: E-Mail senden
+          sended: E-Mail wurde bereits gesendet
+  users:
+    create:
+      coordinatorIn: 'Koordinator*in in den folgenden Gemeinden:'
+      email: 'E-Mail:'
+      favoriteCommune: Heimatkommune
+      firstName: 'Vorname:'
+      firstNamePlaceholder: example
+      lastName: 'Nachname:'
+      password: 'Password:'
+      passwordRepeat: 'Repeat Password:'
+      reporterIn: 'Kommune:'
+      role: 'Rolle:'
+      success:
+        message: >-
+          Der Prozess zum Erstellen des neuen Benutzers wurde erfolgreich
+          abgeschlossen.
+      telephone: 'Telefon:'
+      title: Neue Benutzer anlegen
+      userTitle: 'Titel:'
+      userTitlePlaceholder: (Kein)
+      username: 'Benutzername:'
+      usernamePlaceholder: example
+    roles:
+      administrator: Administration
+      coordinator: Koordination
+      reporter: Meldung
+    update:
+      success:
+        message: Die Informationen des Benutzers wurden erfolgreich aktualisiert.
+      title: Benutzerinformationen aktualisieren
+admininstrator:
+  commune:
+    actions:
+      delete:
+        content: '{communeName} wird aus dem System gelöscht.'
+bottom:
+  content:
+    description: >-
+      Kommunen können RADar! optional ihren Radelnden anbieten, die meisten tun
+      dies im Zusammenhang mit der Kampagne
+                STADTRADELN. <br />
+                Viele Kommunen haben mit solch einem Planungs- und Bürgerbeteiligungsinstrument Neuland betreten. Sollte es z. B. mit
+                den Bearbeitungen der Meldungen aus Ihrer Sicht zu langsam vorangehen, so bitten wir Sie - und sicherlich auch im Namen
+                Ihrer Kommune - um Nachsicht und Geduld.
+    title: Zu guter Letzt
+comment:
+  new:
+    attachmentButton: Speichern
+    createButton: Kommentar senden
+    header: Kommentar schreiben
+    photo:
+      headerLabel: Foto hochladen
+      label: Foto hochladen
+    placeholder: Kommentar …
+    successClose: Zu den Kommentaren
+  update:
+    header: Kommentar bearbeiten
+    photo:
+      headerLabel: Änhange bearbeten
+      label: Kommentaranhang
+    updateButton: Kommentar bearbeiten
+commune:
+  admin:
+    table:
+      helpers:
+        status:
+          active: Die Kommune befindet sich im Meldezeitraum
+          inactive: Der Meldezeitraum ist zu Ende, der Verwaltungszeitraum noch nicht
+          noValidLicesense: Der Verwaltungszeitraum ist zu Ende
+  coordinator:
+    users:
+      table:
+        commune: Kommune
+        email: E-mail
+        firstname: Vorname
+        lastname: Nachname
+        role: Rolle
+        username: Benutzname
+  current:
+    commune: 'Kommune:'
+  filter:
+    byDate:
+      endPlaceholder: Enddatum
+      label: 'Nach Datum filtern:'
+      startPlaceholder: Startdatum
+    byuuid:
+      label: 'Kommune: '
+      placeholder: Wählen Sie eine Kommune
+    export:
+      endPlaceholder: Enddatum
+      startPlaceholder: Startdatum
+      years: 'Nach Datum filtern:'
+  form:
+    create:
+      adminTimeRange:
+        label: 'Verwaltungszeitraum:'
+      confirmation:
+        feesCheck: >-
+          Wir akzeptieren die unter <span class='rd-text-yellow-300'>
+          Lizenzgebühren </span> aufgeführten Preise.*
+        municipalityCheck: >-
+          Wir bestellen als Kommune (Stadt, Gemeinde oder Landkreis/Region) die
+          Meldeplattform RADar! und melden uns hiermit verbindlich an.*
+        privacyCheck: >-
+          Hiermit bestätigen wir, dass wir die <span class='rd-text-yellow-300'>
+          Datenschutzinformationen </span> gelesen und verstanden haben und mit
+          ihnen einverstanden sind.*
+      country:
+        label: 'Land:'
+        placeHolder: Germany
+      description: >-
+        Nur von kommunaler Seite/Verwaltung ausfüllbar bzw. durch dazu
+        beauftragte Personen!
+      footer:
+        label: >-
+          <span class='rd-text-yellow-300'>Bitte beachten:</span> Die Anmeldung
+          wurde erst dann erfolgreich abgeschlossen, wenn Sie auf der Website
+          einen entsprechenden Hinweis sehen. Zudem erhalten Sie im Anschluss
+          eine automatische E-Mail-Bestätigung.
+      license:
+        helper: >-
+          Verwaltungsbereich für die Koordinator*innen in der Kommune wird 1
+          oder 3 Jahre nach dem ersten Tag, an dem Meldungen von Radler*innen
+          abgegeben werden können, geschlossen.
+        label: Lizenz
+        option:
+          one: >-
+            1 Jahr (mit maximal 1 Jahr Meldezeitraum) - KOSTENPFLICHTIG, s. 
+            <span class='rd-text-yellow-300'>Lizenzgebühren</span>
+          two: >-
+            3 Jahre (mit maximal 3 Jahren Meldezeitraum) - KOSTENPFLICHTIG, s.
+            <span class='rd-text-yellow-300'>Lizenzgebühren</span>
+      member:
+        label: 'Mitgliedschaften:'
+        option:
+          KB: Mitglied beim Klima-Bündnis
+      name:
+        helper: >-
+          Korrekte Bezeichnung bei obiger Vorauswahl nicht enthalten? Nur dann
+          hier ergänzen:
+        inputManualPlaceholder: Z.B. „Die“
+        inputManualRegionPlaceholder: z. B. Stadt, Gemeinde, Landkreis/Region
+        label: 'Bezeichnung:'
+      nameManual:
+        helper: so, wie er später auf der Seite erscheinen soll (ohne Bezeichnung!)
+        label: 'Name der Kommune:'
+        placeHolder: Frankfurt
+      population:
+        helper: nur Hauptwohnsitz, bitte möglichst exakt
+        label: 'Einwohnerzahl:'
+      reportingTimeRange:
+        helper: >-
+          Wenn Sie eine kostenlose Version von RADar! verwenden, können Sie
+          diesen Zeitrahmen nicht wählen. Wenn Sie diesen Zeitraum wählen
+          möchten, erwerben Sie bitte eine Premium-Lizenz, s. <span
+          class="rd-text-yellow-300">Lizenzgebühren</span>.
+        label: >-
+          Meldezeitraum, in dem Meldungen von Radler*innen abgegeben werden
+          können*:
+      sameNameCountryOrRegion:
+        description: >-
+          Bei Registrierung für Teams/Radler*innen erscheint bei Kommunenauswahl
+          in alphabetischer Reihenfolge z. B. „Bamberg, Landkreis“ und „Bamberg,
+          Stadt“
+        label: 'Gleichnamige Stadt und Landkreis/Region vorhanden:'
+      search:
+        label: 'Kommune suchen:'
+      state:
+        label: 'Bundesland:'
+        placeHolder: Hessen
+      title: Anmeldung für Kommunen
+  menu:
+    selectedOverview: 'Meldezeitraum: '
+  overlay:
+    select:
+      description: >-
+        Wählen Sie eine Gemeinde aus der Gemeindeliste aus, um alle Details und
+        Berichte der ausgewählten Gemeinde anzuzeigen.
+  search:
+    btn: Suchen
+    placeHolder: Suche...
+  select:
+    commune:
+      label: 'Kommune wählen:'
+    status:
+      placeholder: Aktuelle Meldungen
+  table:
+    header:
+      action:
+        new: Neue Kommune anlegen
+      form:
+        filter:
+          dateEnd: 'Ende der Verwaltung:'
+          dateStart: 'Verwaltungsstart:'
+          helper:
+            label: 'Stard- oder Enddatum von Verwaltungszeitraum wählen:'
+      labels:
+        actions: Aktionen
+        coordinator: Koordinator
+        end: Bis
+        id: RS
+        managementPeriod: Verwaltungszeitraum
+        name: Name der Kommune
+        reportPeriod: Meldezeitraum
+        start: Von
+      title: Übersichtsliste aller Kommunen
+      totalCountLabel: '{currentPage} bis {totalPages} von {totalReports} Einträgen'
+      totalLabel: 'Einträge anzeigen  '
+configuration:
+  map:
+    feedback:
+      confirmation: Kontaktinformationen der Gemeinde aktualisieren
+      email:
+        error: Geben Sie eine gültige E-Mail-Adresse ein
+      name:
+        error: Name ist erforderlich
+      phone:
+        error: Geben Sie eine gültige Telefonnummer an
+      success: Informationen erfolgreich aktualisiert
+    information:
+      email:
+        label: 'E-Mail:'
+        placeHolder: email.com
+      freeText:
+        help: >-
+          Hier können Sie den Nutzern weitere Informationen darüber geben, an
+          wen sie sich in bestimmten Fällen wenden können, oder zusätzliche
+          Informationen über Arbeitszeiten usw. geben.
+        label: Zusätzliche Informationen oder Warnungen/Ratschläge (optional)
+        placeHolder: Free text...
+      name:
+        label: 'Name oder Institution:'
+        placeHolder: Name ...
+      phone:
+        label: 'Phone:'
+        placeHolder: 00-000-000-0000
+    menu:
+      contactInformation: Kontaktinfo
+      contactInformationHelper: >-
+        Hier Kontaktinformationen einstellen/ändern, die öffentlich auf der
+        Karte einzusehen sind.
+      embeddedInformation: Karteneinbettung
+      embeddedInformationComponent: Karteneinbettung
+      embeddedInformationHelper: >-
+        Wenn Sie die öffentliche RADar!-Karte z. B. auf der Website Ihrer
+        Kommune einbinden möchten, können Sie dies mit folgendem HTML-Code tun:
+coordinator:
+  export:
+    help:
+      label: 'Sie können den Filter nutzen, um eine genauere Auswahl zu treffen. '
+  feedback:
+    deleteAll:
+      error: >-
+        Es können nicht alle ausgewählten Berichte gelöscht werden. Bitte
+        versuchen Sie es erneut
+      success: Alle ausgewählten Meldungen wurden gelöscht.
+    unMerge:
+      error: >-
+        Aktion zum Zurücksetzen doppelter Berichte fehlgeschlagen. Bitte
+        versuchen Sie es erneut.
+      success: >-
+        Alle duplizierten Berichte werden auf den ursprünglichen Zustand
+        zurückgesetzt.
+    updateAll:
+      error: >-
+        Es können nicht alle ausgewählten Berichte aktualisiert werden. Bitte
+        versuchen Sie es erneut
+      success: Alle ausgewählten Elemente wurden erfolgreich aktualisiert
+    users:
+      coordinator:
+        error: >-
+          Der Benutzer kann nicht als Koordinator festgelegt werden. Bitte
+          versuchen Sie es erneut
+        success: Benutzer erfolgreich als Koordinator an die Kommune angeschlossen
+      reporters:
+        error: >-
+          Reporter können nicht zur Gemeinde hinzugefügt werden. Bitte versuchen
+          Sie es erneut
+        success: Benutzer erfolgreich als Reporter an die Kommune angehängt
+  licenseRenovationCTA:
+    title: >-
+      Die Verwaltungszeitraum Ihrer Kommune ist abgelaufen. Bitte verlängern Sie
+      Ihre Lizenz.
+  overlay:
+    CTA: Buchung verlängern
+    noCommuneTitle: >-
+      Bitte kontaktieren Sie einen Administrator, damit Sie Teil einer
+      Gemeinschaft werden können
+    subTitle: Bitte verlängern Sie Ihre Lizenz.
+    title: 'Die Verwaltungszeitraum Ihrer Kommune ist abgelaufen. '
+  users:
+    actions:
+      delete:
+        content: Die nachfolgenden Benutzer werden aus dem System {users} gelöscht
+        title: Bist du dir absolut sicher?
+    userDetails:
+      form:
+        coordinatorOn: 'Koordinatorin in den folgenden Gemeinden:'
+        reporterOn: 'Reporterrolle in den folgenden Gemeinden:'
+dashboard:
+  breadcrumb:
+    admin: Admin
+    communes: Kommune
+    dashboard: Dashboard
+    export: Exportieren
+    homePage: Home
+    license: Ihre Lizenz
+    myReports: Meine Meldungen
+    report-status: Nach Status
+    reports: Alle
+    reportsList: Meldugen
+    setting: Konfiguration
+    setting-commune: Kommune
+    setting-map: Karte
+    tools: Tools
+    users: Benutzer
+  reportsView:
+    '1':
+      title: Unbearbeitet Meldugen
+    '2':
+      title: Neutrale Meldugen
+    '3':
+      title: In Bearbeitung Meldugen
+    '4':
+      title: Erledigt Meldugen
+    '5':
+      title: Positive Meldugen
+    all:
+      title: Alle Meldungen
+export:
+  admin:
+    commune:
+      header: Kommune exportieren
+    report:
+      header: 'Meldungen exportieren '
+  download:
+    error: Bitte überprüfen Sie das ausgewählte Datum
+    success: Export erfolgreich heruntergeladen
+filter:
+  actions:
+    DATAEXPORT: Meldungen exportieren
+    FILTERRESET: Filter zurücksetzen
+    close: Filter schliessen
+  card:
+    title: Filter
+  confirmation:
+    message: Die Aktion setzt alle Filter zurück, bitte bestätigen Sie die Aktion.
+    reset:
+      title: Bestätigung
+  menu:
+    filter:
+      headers:
+        REPORT_OTHERS: Weiteres
+        REPORT_REASONS: Meldungsgrund
+        REPORT_STATUS: Bearbeitungsstatus
+    status:
+      ERLEDIGT: Erledigt
+      IN_BEARBEITUNG: in Bearbeitung
+      MEINE_MELDUNG: Meine Meldung
+      NEUTRALE_MELDUNG: Neutrale Meldung
+      POSITIVE_MELDUNG: Positive Meldung
+      UNBEARBEITETE_MELDUNG: unbearbeitet
+  other:
+    address:
+      label: 'Nächstgelegene Adresse:'
+      placeHolder: Straße, Stadt, Gemeinde
+      title: Address
+    empty: ' '
+    reportId:
+      label: 'ID-Nummer der Meldung:'
+      placeHolder: 2015-4371
+      title: 'Meldung ID:'
+    reportPeriod:
+      format: dd.MM.yyyy
+      label: 'Zeitraum der Meldung:'
+      labelTo: Bis
+      placeHolder: 10.08.2022
+      title: Berichtszeitraum
+    reporterBy:
+      label: 'Name:'
+      labelEmail: E-Mail
+      labelUuId: 'UUID:'
+      lastNameLabel: Nachname
+      lastNamePlaceHolder: Bitte Nachnamen eingeben
+      lastNameTitle: ' '
+      placeHolder: Bitte Vornamen eingeben
+      placeHolderEmail: formatbeispiel#email.com
+      placeHolderUuId: 0000-22132
+      title: Gemeldet durch
+      usernameLabel: 'Benutzernamen:'
+      usernamePlaceHolder: Bitte Benutzernamen eingeben
+  reasons:
+    groupLabel:
+      ABSTELLANLAGEN: Abstellanlagen ({selected} von {total} ausgewählt)
+      BEHINDERUNG: Behinderung ({selected} von {total} ausgewählt)
+      LICHTSIGNALANLAGE_(AMPEL): Lichtsignalanlage (Ampel) ({selected} von {total} ausgewählt)
+      OBERFLÄCHE: Oberfläche ({selected} von {total} ausgewählt)
+      POSITIVE_MELDUNG: Positive Meldung ({selected} von {total} ausgewählt)
+      RADWEGWEISUNG: Radwegweisung ({selected} von {total} ausgewählt)
+      SONSTIGE_HINWEISE: Sonstige Hinweise ({selected} von {total} ausgewählt)
+      STRASSENBAUARBEITEN: Straßenbauarbeiten ({selected} von {total} ausgewählt)
+      VERKEHRSBESCHILDERUNG/MARKIERUNG/BELEUCHTUNG: >-
+        Verkehrsbeschilderung/Markierung/Beleuchtung ({selected} von {total}
+        ausgewählt)
+      VERKEHRSFÜHRUNG: Verkehrsführung ({selected} von {total} ausgewählt)
+filtering:
+  confirmation:
+    'no': Abbrechen
+    'yes': Zurücksetzen
+footer:
+  content:
+    copyright: Copyright {year} Klima-Bündnis. Alle Rechte vorbehalten.
+    social:
+      label: Social Media STADTRADELN
+      mediaOptions:
+        facebook:
+          icon: Facebook
+          link: https://www.facebook.com/
+        instagram:
+          icon: Instagram
+          link: https://www.instagram.com/
+        tumblr:
+          icon: Tumblr
+          link: https://www.tumblr.com/
+        twitter:
+          icon: Twitter
+          link: https://www.twitter.com/
+        youtube:
+          icon: Youtube
+          link: https://www.youtube.com/
+    toolLabel: RADar! ist ein Tool des Klima-Bündnis.
+global:
+  actions:
+    cancel: Abbrechen
+    close: Schliessen
+    closeModal: Nah dran
+    coordinator:
+      merge:
+        label: Zusammenlegen
+        unMerge: Trennen
+    copy: Code kopieren
+    copyDone: kopiert in die Zwischenablage
+    create: Einreichen
+    createUser: Speichern
+    delete: Löschen
+    deleteCoordinators: Als Koordinator entfernen
+    deleteReporters: Als Reporter entfernen
+    download: Exportieren
+    fileType:
+      all: Beide
+      label: Wähle Dateiformat
+      shp: Shapefile
+      xlsx: Excel
+    filter: Filter
+    goBack: Zurück
+    hover:
+      hideOnMap: Verbergen
+    login: Login
+    merge: Zusammenlegen
+    newReport:
+      helper:
+        label: >-
+          Es gibt zwei Möglichkeiten den genauen Ort deiner Meldung zu
+          bestimmen:
+        step1: Direkt in der Karte
+        step2: Über die Eingabe der Adresse
+    register: Registrieren
+    setAsCoordinator: 'Rolle Koordinator '
+    setAsReporters: Rolle Reporter
+    status: Status
+    toggleVisibility: Sichtbarkeit umschalten
+    undo:
+      label: Zurücksetzen
+    update: Speichern
+  collapseInfo: So funktionier’s
+  commune:
+    create:
+      label: Kostenpflichtig anmelden
+  help:
+    label: Mehr Infos
+  helper:
+    anon:
+      reports: ' Es steht der Kommune frei, ob sämtliche Meldungen öffentlich auf der Karte einsehbar sind.'
+  infoLabel: Mehr Infos
+  information:
+    export: >-
+      Wenn Sie den Dateityp oder die Kommune nicht auswählen, werden die
+      gesamten Systemdaten exportiert.
+  pagination:
+    label: '{size}/Seite'
+    total: Gesamt {total}
+  report:
+    edit:
+      noMap: Bitte öffnen Sie die Karte
+      noMapContent: Bitte öffnen Sie die Karte, bevor Sie einen Meldung bearbeiten
+  search:
+    action:
+      go: Go
+    address:
+      placeholder: Adresse durchsuchen
+  table:
+    pagination:
+      total: 'Meldungen Gesamt: {total}'
+      totalCommune: 'Kommunen gesamt: {total}'
+      usersTotal: 'Benutzer Gesamt: {total}'
+  upload:
+    helper:
+      label: Bild hinzufügen
+header:
+  callToActionText: So funktioniert's!
+  description: >-
+    Ihre Kommune lädt Sie ein die Radinfrastruktur zu verbessern. Einfach auf
+    der Karte eine Meldung eintragen oder von unterwegs über die <span
+    class='rd-text-yellow-300 rd-font-medium'>STADTRADELN-App.</span>
+  title: Gemeinsam für eine bessere Radinfrastruktur
+icon:
+  status:
+    ERLEDIGT: erledigte Meldung
+    IN_BEARBEITUNG: Meldung ist in Bearbeitung
+    MEINE_MELDUNG: meine Meldungen
+    NEUTRALE_MELDUNG: neutrale Meldung
+    POSITIVE_MELDUNG: positive Meldung
+    UNBEARBEITETE_MELDUNG: unbearbeitete Meldung
+labels:
+  name: Name
+license:
+  form:
+    administration:
+      end:
+        inputLabel: Ende Verwaltungszeitraum
+      start:
+        header: Verwaltungszeitraum
+        inputLabel: Beginn Verwaltungszeitraum
+        label: Verwaltungszeitraum
+    reportingPeriod:
+      end:
+        inputLabel: Ende Berichtszeitraum
+      header:
+        label: Berichtszeitraum
+      start:
+        inputLabel: Beginn Berichtszeitraum
+        label: 'Berichtszeitraum:'
+  header:
+    label: Ihre RADar!-Lizenz
+    renew:
+      label: Buchung verlängern
+map:
+  coordinator:
+    actions:
+      showMap:
+        closeLabel: Karte schließen
+        label: Karte öffnen
+  errors:
+    attachment:
+      attachmentIdMissing: Anhang nicht gefunden
+      deleteSuccess: Anhang aus Meldung entfernt
+      filesize: >-
+        Bilder hinzufügen (max. 3 MB/Datei). Bitte achten Sie darauf, dass auf
+        den Bildern keine Personen erkennbar sind.
+      genericError: Anhang kann nicht aktualisiert werden
+      maxLimit: Es können maximal 3 Bilder angehängt werden.
+      reportIdMissing: Anhang erfolgreich aktualisiert
+      success: Anhang erfolgreich aktualisiert
+    create:
+      fail: Diesmal kann der Meldung nicht erstellt werden. Versuchen Sie es erneut
+      missingRequiredFields: >-
+        Bitte füllen Sie alle erforderlichen Felder aus, um einen neue Meldung
+        zu erstellen
+      success: Meldung erfolgreich erstellt
+  popup:
+    commune:
+      inactive:
+        description: >-
+          Hier wurde von Radelnden eine Meldung zu <strong>{reason}</strong>
+          abgegeben. Die Kommune kann diese Meldung erst wieder bearbeiten, wenn
+          sie eine neue Lizenz erwirbt. Kontaktiere die Kommune, um das
+          anzuregen.
+        title: Die Kommune ist derzeit inaktiv
+    content:
+      attachment: 'Anhänge:'
+      comment: 'Beschreibung:'
+      commentsAdminLabel: 'Anmerkungen der Gemeindeverwaltung:'
+      commentsLabel: 'Kommentare:'
+      coordinator:
+        title: Anmerkung der Kommune
+      formattedAddress: 'nächstgelegene Adresse: '
+      id: 'ID :'
+      location: 'Geo-position: '
+      reporter:
+        email: 'Email:'
+        firstName: 'Vorname:'
+        lastName: 'Familienname, Nachname:'
+        role: 'Rolle:'
+        title: Benutzerinformationen
+        username: 'Nutzername:'
+        uuid: 'UuId:'
+      status: 'Bearbeitungsstatus: '
+      subTitle: 'Allgemeine Angaben: '
+      timeStamp: 'Zeitpunkt:'
+      title: 'Meldung: '
+      workDuration: 'Bearbeitungsdauer:'
+    likes: '{likes} Bestätigungen'
+  useUserLocation:
+    label: Verwenden Sie meinen Standort
+menu:
+  administration: Administration
+  config: Konfiguration
+  contact: Kontakt
+  dashboard: Dashboard
+  dataExport: Daten exportieren
+  filter: Filter
+  newReport: Neue Meldung
+  ownReport: Meine Meldungen
+  publicMap: Öffentliche Karten
+  report: Meldungen
+  reports:
+    DONE: erledigt ({view}/{total})
+    ICONS: legende einblenden
+    INPROGRESS: in Bearbeitung ({view}/{total})
+    NEUTRALMESSAGE: neutrale Meldung ({view}/{total})
+    POSITIVECONTENT: >-
+      <div class='map-wrapper-text-sm'><strong>
+          @:{'menu.reports.POSITIVECONTENTTITLE'}
+      </strong> 
+
+      </div> 
+
+      <div> 
+
+      Nachträglich kann während dem Meldezeitraum sowohl die Position der
+      eigenen Meldung (durch Drag and Drop) verschoben als auch Fotos (Meldung
+      anklicken, dann zu „Bildmaterial“ gehen) hinzugefügt werden. 
+
+      </div>
+    POSITIVECONTENTTITLE: 'Gesamt: {view} von {total} angezeigten Meldungen'
+    POSITIVEMESSAGE: positive Meldung ({view}/{total})
+    UNEDITED: unbearbeitet ({view}/{total})
+mobile:
+  reports:
+    table:
+      attachmentLabel: Bilder öffnen
+      idLabel: 'ID: '
+      reasonLabel: 'Meldungsgrund:'
+profile:
+  update:
+    user:
+      profile:
+        bad-commune: Kommune mit angegebener UUID kann nicht gefunden werden
+        success: Profilinformationen erfolgreich aktualisiert
+  user:
+    modal:
+      title: Profil aktualisieren
+    title: Nutzerinformation
+public:
+  information:
+    card:
+      content: >-
+        <strong>Meldungen</strong> sind ausschließlich <strong>auf dem
+        Territorium/Zuständigkeitsbereich der am RADar!-teilnehmenden
+        Kommunen</strong> möglich, sprich innerhalb der dunklen Linie (bei z. B.
+        Inseln ggf. mehrere Abgrenzungslinien).<br/><br/>
+        <strong>Meldungen</strong> sind lediglich im
+        <strong>Meldezeitraum</strong> möglich, der von der Kommune festgelegt
+        wird.
+      title: 'BITTE BEACHTEN:'
+    list:
+      '1': >-
+        Auf „neue Meldung“ klicken. Dann Markierung/Pin auf die Stelle in der
+        Karte setzen, um dort eine Verbesserung vorzuschlagen - alternativ eine
+        Meldung über die nächstgelegene Adresse (möglichst mit Hausnummer) im
+        Adressfeld eintragen.
+      '2': >-
+        Bei Punkt „Meldungsbeschreibung/Meldungsgrund“ über eine Kategorie den
+        Grund auswählen.
+      '3': >-
+        Weitere Angaben können als Hinweis bzw.  nähere Beschreibung der Meldung
+        hinzugefügt und/oder ein Bild hochgeladen werden.
+      '4': >-
+        Auf „Meldung absenden“ klicken - das war's! <br/> Ihre Meldung wird
+        automatisch der zuständigen Stelle in Ihrer Kommune mitgeteilt,  die
+        sich der Sache annimmt und Sie ggf. kontaktiert.
+    question: >-
+      Ihre Meldung wird automatisch der zuständigen Stelle in Ihrer Kommune
+      mitgeteilt, die sich der Sache annimmt und Sie ggf. kontaktiert.
+    title: So funktioniert's!
+  newComment:
+    hint: Bitte registriere dich oder melde dich an, um Berichte zu erstellen
+  newReport:
+    hint: Bitte registriere dich oder melde dich an, um Berichte zu erstellen.
+registration:
+  commune:
+    feedback:
+      success: Neue Kommune wurde erstellt. Vielen Dank!
+    selectCommune:
+      btn: Anmeldung verlängern
+      label: 'Kommune wählen:'
+    step2:
+      title: Pflichtfelder sind mit einem * gekennzeichnet.
+    step3:
+      title: Für die Kommune anmeldende Person
+    step4:
+      title: Kontaktdaten der lokalen Koordination
+    step5:
+      title: Rechnungsempfänger*in
+    step6:
+      title: 'Nur für Landkreise/Regionen: Zugehörige Städte/Gemeinden anmelden'
+    user:
+      address:
+        label: 'Straße/Hausnr.:'
+        placeHolder: Straße/Hausnr.
+      addressExtend:
+        label: 'Adresszusatz:'
+        placeHolder: Adresszusatz...
+      department:
+        label: 'Abteilung/Fachbereich:'
+        placeHolder: Abteilung...
+      email:
+        label: 'E-Mail:'
+        placeHolder: email-email.example
+      firstName:
+        label: 'Vorname:'
+        placeHolder: Vorname...
+      function:
+        label: 'Funktion:'
+        placeHolder: Funktion...
+      institution:
+        helper: falls nicht für die Kommune tätig
+        label: 'Institution:'
+        placeHolder: Z.B. „Die“
+      lastName:
+        label: 'Nachname:'
+        placeHolder: Nachname...
+      password:
+        label: 'Passwort:'
+        placeHolder: Passwort...
+      place:
+        label: 'PLZ, Ort:'
+        placeHolder: Ort
+        zipPlaceHolder: PLZ
+      pronouns:
+        label: 'Anrede:'
+        placeHolder: '-- Bitte wählen --'
+      telephone:
+        PlaceHolder: Nr.
+        areaPlaceHolder: Vorwahl
+        label: 'Telefon:'
+      title:
+        label: 'Titel:'
+        placeHolder: (Kein)
+report:
+  action:
+    create:
+      selectCommune:
+        description: Bitte wählen Sie eine aktive Gemeinde aus
+        title: Bitte wählen Sie eine Gemeinde aus
+  attachment:
+    modal:
+      title: Anhänge aus der Meldung
+  comment:
+    action:
+      delete:
+        message: Möchten Sie den Kommentar wirklich löschen?
+        'no': Nein
+        title: ' Kommentar  löschen'
+        'yes': loschen
+      edit:
+        cancel: Abbrechen
+        title: Kommentar bearbeiten
+        update: Aktualisieren
+  coordinator:
+    edit:
+      actions:
+        cancel: Abbrechen
+        delete: Meldung löschen?
+        save: Speichern
+        saveAndClose: Speichern und schließen
+      period:
+        label: 'Umsetzungsdauer:'
+        placeholder: Keine Angabe
+      status:
+        label: 'Bearbeitungsstatus:'
+        placeholder: In Bearbeitung
+      title: Meldung bearbeiten
+    tabs:
+      FORWARDMESSAGES: Meldungen weiterleiten
+      HISTORY: Verlauf
+      IDENTICALREPORT: Identische Meldung
+      NOTES: Notizen
+      REMARK: Anmerkung
+      content:
+        duplicate:
+          infoLabel: >-
+            Diese Meldung wird zur Hauptmeldung. Die als identisch ausgewählten
+            Meldungen sind auf der öffentlichen Karte nicht mehr sichtbar.
+        noteInformationContent: >-
+          Öffentlich einsehbar, wenn auch generell diese Meldung öffentlich
+          sichtbar ist
+        noteInformationLabel: >-
+          Öffentlich einsehbar, wenn auch generell diese Meldung öffentlich
+          sichtbar ist
+        notePlaceholder: Anmerkung eingeben …
+        noteTitle: Anmerkungen
+        notesInformationContent: Helper notes **Need update**
+        notesInformationLabel: Nur sichtbar für Koordinator*innen Ihrer Kommune
+        notesPlaceholder: Notiz eingeben …
+        notesTitle: Eigene Notizen
+  create:
+    collapse:
+      NEWREPORTFORM: Neue Meldung
+      NEWREPORTFORMEXTRAINFO: Weitere Angaben zu deiner Meldung
+      NEWREPORTFORMPICTURES: Fotos hochladen
+      NEWREPORTFORMREASON: Meldungsgrund
+      UPDATEREPORTFORM: 'Bearbeite Meldung: {reportId}'
+      UPDATEREPORTFORMEXTRAINFO: Meldungsbeschreibung
+      UPDATEREPORTFORMPICTURES: Fotos hochladen
+      UPDATEREPORTFORMREASON: Meldungsgrund
+      UPDATEREPORTFORMSTATUS: Meldungsstatus aktualisieren
+    errors:
+      outOfCommuneClick: Achtung
+      outOfCommuneContent: Aktuelle Adresse außerhalb der Zuständigkeit!
+    form:
+      address: 'Nächstgelegene Adresse:'
+      addressPlaceholder: Straße, Stadt, Gemeinde
+      attachmentHelpText: >-
+        Bilder hinzufügen (max. 3 MB / Datei).<br/> Bitte achten Sie darauf,
+        dass keine Personen aufden Bildern erkennbar sind.
+      commentHelpText: Fasse dich möglichst kurz und stichwortartig - noch {count} Zeichen.
+      commentMaxReached: Maximal zulässige Textmenge erreicht
+      commentPlaceholder: Beschreibe hier, was deine Kommune außerdem wissen muss
+      latitude: 'Breitengrad:'
+      latitudePlaceholder: 'Formatbeispiel: 50.082251'
+      longitude: 'Längengrad:'
+      longitudePlaceholder: 'Formatbeispiel: 8.624607'
+      search: Suchen
+  delete:
+    confirmation:
+      cancel: Abbrechen
+      confirm: Alle löschen
+      content: Möchtest du die ausgewählte Meldung wirklich löschen?
+      coordinator:
+        content: Möchten Sie die ausgewählten Meldungen wirklich löschen?
+        title: Sind Sie sich absolut sicher?
+      title: Bist du dir absolut sicher?
+  details:
+    address: Adresse
+    attachments: Anhänge
+    id: ID
+    reasonCategoryName: Meldungsgrund
+    timestamp: Datum
+  errors:
+    attachment:
+      attachment:
+        file:
+          write-error: Bitte wenden Sie sich an die Gemeindeverwaltung
+      attachmentIdMissing: Datei als Anhang nicht gefunden
+      deleteSuccess: Anhang aus der Meldung entfernt
+      filesize: >-
+        Bilder hinzufügen (max. 3 MB / Datei). Bitte achten Sie darauf, dass
+        keine Personen aufden Bildern erkennbar sind.
+      genericError: Meldungsanhang kann nicht aktualisiert werden
+      maxLimit: Maximal 3 Bilder können angehängt werden.
+      reportIdMissing: Anhang konnte nicht hinzugefügt werden, die Meldung existiert nicht mehr
+      success: Meldungsanhang erfolgreich aktualisiert
+    comment:
+      maxNum:
+        reached: Die maximale (3) Anzahl an Kommentaren wurde erreicht
+    commune:
+      check:
+        exists: Bitte überprüfen Sie, ob Sie eine gültige Gemeinde ausgewählt haben
+    create:
+      fail: Meldung kann diesmal nicht erstellt werden, versuchen Sie es erneut
+      missingRequiredFields: >-
+        Bitte füllen Sie alle erforderlichen Felder aus, um einen neue Meldung
+        zu erstellen
+      success: Meldung erfolgreich erstellt
+    person:
+      missing: Reporter-UUID fehlt
+    reason-category:
+      missing: Bitte wählen Sie eine gültige Meldungskategorie aus
+    report:
+      create:
+        location-not-in-area: >-
+          Der Standort liegt außerhalb der Grenzen der aktuell ausgewählten
+          Gemeinde
+    update:
+      error: Die Meldung kann nicht aktualisiert werden
+      success: Meldung erfolgreich aktualisiert
+    validation:
+      error: Alle Felder sind erforderlich
+  filter:
+    modal:
+      title: Berichtsoptionen filtern
+  merge:
+    confirmation:
+      content: Der Bericht mit der ID {report} ist der fürende Bericht
+    description: >-
+      Wählen Sie die Hauptmeldung aus. Die anderen Meldungen werden nicht mehr
+      auf der öffentlichen Karte angezeigt.
+    identical:
+      child:
+        header: identische Meldungen
+      header: Identische Meldung auswählen und mit dieser zusammenführen
+      label: 'Identische Meldung auswählen:'
+    title: Ausgewählte Meldungen zusammenführen
+  unMerge:
+    confirmation:
+      confirm: Duplikate wiederherstellen
+      content: >-
+        Bestätigen Sie um mit der Meldung { reportId } zusammengeführte
+        Duplikate wiederherzustellen..
+  useUserLocation:
+    label: Meinen Standort verwenden
+  visibility:
+    confirmation:
+      confirm: Sichtbarkeit aktualisieren
+      content: 'Die Meldung mit ID-Nr.: {reportId} wird für alle Benutzer ausgeblendet.'
+      contentVisible: 'Die Meldung mit der ID: {reportId} ist für alle Benutzer sichtbar.'
+  warning:
+    confirmation:
+      confirm: Alle aktualisieren
+      content: >-
+        Alle ausgewählten Berichte werden auf den folgenden Status {status}
+        aktualisiert
+settings:
+  view:
+    commune:
+      archive:
+        action:
+          content: Bitte bestätigen Sie die Aktualisierung des Archivzeitraums
+        feedback:
+          success: Archivierter Zeitrahmen erfolgreich aktualisiert!
+        information: >-
+          Meldungen werden archiviert und sind nicht mehr öffentlich sichtbar
+          nach Monaten:
+        subtitle: >-
+          Der Status der Meldung wurde auf „erledigt“ oder „neutral“ gesetzt.
+          Für die Archivierung ist das Datum, wann die Meldung abgegeben wurde
+          entscheidend.
+        title: Archiv
+      reasons:
+        action:
+          content: >-
+            Bitte bestätigen, um die Gründe für die Benutzer sichtbar/nicht
+            sichtbar zu setzen!
+          title: Bist du sicher?
+        feedback:
+          success: Gründe erfolgreich aktualisiert!
+        information: >-
+          Ist Häkchen gesetzt, wird der Meldungsgrund den Radelnden bei Abgabe
+          einer Meldung angezeig
+        subtitle: >-
+          Durch Anklicken festlegen, welche Meldungsgründe den Radelnden zur
+          Auswahl stehen.
+        title: Meldungsgünde an- und abwählen
+      status:
+        action:
+          content: Alle Statusänderungen für die Gemeinde werden gespeichert
+        confirmation: Kontaktinformationen der Gemeinde aktualisieren
+        feedback:
+          success: Statussichtbarkeit erfolgreich aktualisiert!
+        information: >-
+          ist Häkchen gesetzt, sind die Meldungen für Ihre Radelnden im
+          Login-Bereich und auf der Unterseite Ihrer Kommune einsehbar
+        subtitle: >-
+          Durch Anklicken festlegen, welche Meldungen mit welchem Status
+          öffentlich einsehbar sind.
+        title: Sichtbarkeit Status auf Karte
+sidebar:
+  collapse:
+    label: Weniger zeigen
+  communes:
+    RD: Radar!
+    SR: Stadtradeln
+    active: Aktiv
+    all: Alle
+    inactive: Inaktiv
+    main: Kommunen
+  dashboard: Dashboard
+  license: Ihre Lizenz
+  myReports: Meine Meldungen
+  reports:
+    all: Alle ({count})
+    done: Erledigt ({count})
+    main: Meldungen
+    neutral: Neutrale ({count})
+    new: unbearbeitet ({count})
+    onProgress: In Bearbeitung ({count})
+    positive: Positive ({count})
+  settings:
+    commune: Meldungen konfigurieren
+    contract: Vertrag
+    email: Emails konfigurieren
+    main: Konfiguration
+    map: Karte konfigurieren
+    reports: Meldungen konfigurieren
+  tools:
+    export: Exportieren
+    import: Importieren
+    main: Werkzeug
+  users:
+    all: Alle ({count})
+    coordinators: Koordinatoren ({count})
+    main: Benutzerverwaltung
+users:
+  coordinator:
+    actions:
+      newCoordinator:
+        button: Neuer Koordinator
+      newUser:
+        button: Benutzer*in anlegen
+      search:
+        button: Suche Benutzer*in
+    header:
+      coordinatorLabel: Liste der Koordinatoren
+      label: Benutzer*innenwaltung

@@ -1,0 +1,1055 @@
+actions:
+  cancel: Cancel
+  comment:
+    create:
+      success:
+        message: |-
+          Your comment has been sent. 
+          Thanks very much!
+  filter:
+    cancel: Cancel
+    helper: You can only choose start or end date, but not both.
+    save: Apply
+  report:
+    create:
+      submit: Create Report
+      success:
+        message: |-
+          Your message has been sent. 
+          Thanks very much!
+        report_created: Report generated successfully
+    unMerge:
+      success:
+        message: All duplicate reports will be restored to their original state.
+    update:
+      actions:
+        close: Done
+        update: Update
+      attachment:
+        formTitle: Report attachment
+      attachmentActive: Message attachment (optional)
+      confirmation:
+        cancel: Abort
+        content: Are you sure you want to remove the attachment?
+        submit: Continue
+        title: Please confirm the following action
+      error:
+        empty: Please select a new location
+      locationLabel: Please choose a location on the map
+      submit: save Changes
+    visibility:
+      singleSuccess: Report visibility successfully updated
+      success: Visibility of reports updated successfully
+  save: Save
+admin:
+  commune:
+    email:
+      send:
+        success: |-
+          Email has been sent. 
+          Thanks very much!
+        tooltip:
+          send: Send Email
+          sended: Email was already sent
+  users:
+    create:
+      coordinatorIn: 'Coordinator in the following communities:'
+      email: 'E-mail:'
+      favoriteCommune: Home commune
+      firstName: 'First name:'
+      firstNamePlaceholder: example
+      lastName: 'Last name:'
+      password: 'Password:'
+      passwordRepeat: 'Repeat Password:'
+      reporterIn: 'Municipality:'
+      role: 'Role:'
+      success:
+        message: The new user creation process was completed successfully.
+      telephone: 'Phone:'
+      title: Create new users
+      userTitle: 'Title:'
+      userTitlePlaceholder: (No)
+      username: 'User name:'
+      usernamePlaceholder: example
+    roles:
+      administrator: Administration
+      coordinator: Coordination
+      reporter: Reporter
+    update:
+      success:
+        message: The user's information has been successfully updated.
+      title: Update user information
+admininstrator:
+  commune:
+    actions:
+      delete:
+        content: '{communeName} communities will be deleted from the system'
+bottom:
+  content:
+    description: >-
+      Municipalities can use RADar! 
+
+      optionally offer their cyclists, most do this in connection with the
+      campaign
+
+      CITY CYCLING. 
+
+      <br />
+
+      Many municipalities have entered new territory with such a planning and
+      public participation tool. 
+
+      Should it e.g. 
+
+      B. with
+
+      If you think the processing of the reports is progressing too slowly, we
+      ask you - and certainly also on behalf of you
+
+      your municipality - for forbearance and patience.
+    title: Last but not least
+comment:
+  new:
+    attachmentButton: Save
+    createButton: Send comment!
+    header: write a comment
+    photo:
+      headerLabel: Upload a photo
+      label: Upload a photo
+    placeholder: Comment...
+    successClose: To the comments
+  update:
+    header: Edit comment
+    photo:
+      headerLabel: Edit attachments
+      label: Comment attachment
+    updateButton: Edit comment
+commune:
+  admin:
+    table:
+      helpers:
+        status:
+          active: The municipality is in the reporting period
+          inactive: The registration period is over, the administration period is not
+          noValidLicesense: The administrative period has ended
+  coordinator:
+    users:
+      table:
+        commune: commune
+        email: E-mail
+        firstname: First Name
+        lastname: Surname
+        role: role
+        username: Username
+  current:
+    commune: 'Municipality:'
+  filter:
+    byDate:
+      endPlaceholder: Commune end date
+      label: 'Filter by date: '
+      startPlaceholder: Commune start date
+    byuuid:
+      label: 'Countys :'
+      placeholder: Choose a municipality
+    export:
+      endPlaceholder: end date
+      startPlaceholder: start date
+      years: 'Filter by date:'
+  form:
+    create:
+      adminTimeRange:
+        label: 'Management period:'
+      confirmation:
+        feesCheck: >-
+          We accept the prices listed in <span
+          class='rd-text-yellow-300'>Royalty Fees</span>.*
+        municipalityCheck: >-
+          As a municipality (city, municipality or district/region), we order
+          the reporting platform RADar! 
+
+          and hereby register bindingly.*
+        privacyCheck: >-
+          We hereby confirm that we have read, understood and agree to the <span
+          class='rd-text-yellow-300'> data protection information </span>.*
+      country:
+        label: 'Country:'
+        placeHolder: Germany
+      description: >-
+        Can only be filled out by the municipal side/administration or by
+        persons commissioned to do so!
+      footer:
+        label: >-
+          <span class='rd-text-yellow-300'>Please note:</span> Registration has
+          not been successfully completed until you see a corresponding message
+          on the website. 
+
+          You will also receive an automatic email confirmation afterwards.
+      license:
+        helper: >-
+          Administrative area for the coordinators in the municipality will be
+          closed 1 or 3 years after the first day on which cyclists can
+          register.
+        label: license
+        option:
+          one: >-
+            1 year (with a maximum of 1 year reporting period) - PAID, see <span
+            class='rd-text-yellow-300'>License Fees</span>
+          two: >-
+            3 years (with a maximum of 3 years reporting period) - PAID, see
+            <span class='rd-text-yellow-300'>License Fees</span>
+      member:
+        label: 'Memberships:'
+        option:
+          KB: Member of the Climate Alliance
+      name:
+        helper: |-
+          Correct designation not included in the preselection above? 
+          Just add here:
+        inputManualPlaceholder: E.g. "The"
+        inputManualRegionPlaceholder: |-
+          e.g. 
+          e.g. city, municipality, county/region
+        label: 'Name:'
+      nameManual:
+        helper: as it should appear later on the page (without a description!)
+        label: 'Municipality name:'
+        placeHolder: Frankfurt
+      population:
+        helper: Main residence only, please be as precise as possible
+        label: 'Population:'
+      reportingTimeRange:
+        helper: >-
+          If you have a free version of RADar! 
+
+          use, you cannot select this time frame. 
+
+          If you want to choose this period, please purchase a premium license,
+          see <span class="rd-text-yellow-300">License Fees</span>.
+        label: 'Reporting period in which cyclists can submit reports*:'
+      sameNameCountryOrRegion:
+        description: |-
+          When registering for teams/cyclists, e.g. 
+          B. "Bamberg, district" and "Bamberg, city"
+        label: 'City and district/region of the same name available:'
+      search:
+        label: 'Search municipality:'
+      state:
+        label: 'Federal State:'
+        placeHolder: Hessen
+      title: Registration for municipalities
+  menu:
+    selectedOverview: 'Reports date:'
+  overlay:
+    select:
+      description: >-
+        Select a commune from the commune list to view all the details and
+        reports from  the selected commune.
+  search:
+    btn: Search
+    placeHolder: Search...
+  select:
+    commune:
+      label: 'Choose municipality:'
+    status:
+      placeholder: current news
+  table:
+    header:
+      action:
+        new: Create a new municipality
+      form:
+        filter:
+          dateEnd: 'Administration End:'
+          dateStart: 'Administration Start:'
+          helper:
+            label: 'Select start or end date of administration period:'
+      labels:
+        actions: Actions
+        coordinator: Coordinator
+        end: To
+        id: ID
+        managementPeriod: Management Period
+        name: Name
+        reportPeriod: Report Period
+        start: From
+      title: Overview list of all municipalities
+      totalCountLabel: '{currentPage} to {totalPages} of {totalReports} entries'
+      totalLabel: 'Show entries  '
+configuration:
+  map:
+    feedback:
+      confirmation: Update community contact information
+      email:
+        error: Enter a valid email address
+      name:
+        error: Name is required
+      phone:
+        error: Provide a valid phone number
+      success: Information updated successfully
+    information:
+      email:
+        label: 'E-mail*:'
+        placeHolder: email.com
+      freeText:
+        help: >-
+          Here you can give users more information about who to contact in
+          specific cases, or provide additional information about working hours,
+          etc.
+        label: Additional information or warnings/advice (optional)
+        placeHolder: freetext...
+      name:
+        label: 'Name or institution*:'
+        placeHolder: Surname ...
+      phone:
+        label: 'phone*:'
+        placeHolder: 00-000-000-0000
+    menu:
+      contactInformation: contact info
+      contactInformationHelper: Set/edit contact information here that is publicly viewable on the map.
+      embeddedInformation: map embedding
+      embeddedInformationComponent: map embedding
+      embeddedInformationHelper: >-
+        If you use the public RADar! map e.g. 
+
+        e.g. on your municipality's website, you can do this with the following
+        HTML code:
+coordinator:
+  export:
+    help:
+      label: You can use the filter to make a more precise selection.
+  feedback:
+    deleteAll:
+      error: Can't delete all selected reports, Please try again
+      success: All seleted Reports where deleted.
+    unMerge:
+      error: 'Revert duplicted reports action fail, Please try again. '
+      success: All duplicated reports,reverted to the original state.
+    updateAll:
+      error: Can't update all seleceted reports, please try again
+      success: All selected items where updated successfully
+    users:
+      coordinator:
+        error: The user's can't be set as coordinator please try again
+        success: Successfully attached users as coordinator to the commune
+      reporters:
+        error: Can't add Reporters to the commune,Please try again
+        success: Successfully attached users as Reporters to the commune
+  licenseRenovationCTA:
+    title: |-
+      The administration period of your municipality has expired. 
+      Please renew your license.
+  overlay:
+    CTA: Extend booking
+    noCommuneTitle: Please contact an administrator so that you can become part of a community
+    subTitle: Please renew your license.
+    title: The administration period of your municipality has expired.
+  users:
+    actions:
+      delete:
+        content: The fallowing users will be deleted from the system {users}
+        title: Are you absolutely sure?
+    userDetails:
+      form:
+        coordinatorOn: 'Coodinator in the fallowing communes:'
+        reporterOn: 'Reporter role in the fallowing communes:'
+dashboard:
+  breadcrumb:
+    admin: admin
+    communes: commune
+    dashboard: Dashboard
+    export: Export
+    homePage: Home
+    license: your license
+    myReports: My Reports
+    report-status: By Status
+    reports: All
+    reportsList: Reports
+    setting: configuration
+    setting-commune: commune
+    setting-map: Map
+    tools: tools
+    users: Users
+  reportsView:
+    '1':
+      title: Unprocessed reports
+    '2':
+      title: Neutral reports
+    '3':
+      title: In progress reports
+    '4':
+      title: Complete reports
+    '5':
+      title: Positive reports
+    all:
+      title: All reports
+export:
+  admin:
+    commune:
+      header: Export Municipality
+    report:
+      header: Report data export
+  download:
+    error: Please check the selected date
+    success: Export downloaded successfully
+filter:
+  actions:
+    DATAEXPORT: Export notifications
+    FILTERRESET: Reset filter
+    close: close filters
+  card:
+    title: Filter
+  confirmation:
+    message: Action will reset all the filtering, plase confirm action.
+    reset:
+      title: Confirmation
+  menu:
+    filter:
+      headers:
+        REPORT_OTHERS: Additional
+        REPORT_REASONS: Report reason
+        REPORT_STATUS: Processing status
+    status:
+      ERLEDIGT: Done
+      IN_BEARBEITUNG: In Progress
+      MEINE_MELDUNG: my Report
+      NEUTRALE_MELDUNG: Neutral Report
+      POSITIVE_MELDUNG: Positive Report
+      UNBEARBEITETE_MELDUNG: Unedited
+  other:
+    address:
+      label: Containing Text
+      placeHolder: Please enter text
+      title: Address
+    empty: ' '
+    reportId:
+      label: ID
+      placeHolder: Please enter ID
+      title: 'Report ID:'
+    reportPeriod:
+      format: dd/MM/yyyy
+      label: From
+      labelTo: To
+      placeHolder: 08/10/2022
+      title: Reporting period
+    reporterBy:
+      label: First name
+      labelEmail: E-mail
+      labelUuId: 'UUID:'
+      lastNameLabel: Username
+      lastNamePlaceHolder: Please enter last name
+      lastNameTitle: ' '
+      placeHolder: Please enter first name
+      placeHolderEmail: Please enter email
+      placeHolderUuId: 0000-22132
+      title: Reported by
+      usernameLabel: 'Username:'
+      usernamePlaceHolder: Please enter username
+  reasons:
+    groupLabel:
+      ABSTELLANLAGEN: Storage facilities ({selected} from {total} selected)
+      BEHINDERUNG: Disability ({selected} selected from {total})
+      LICHTSIGNALANLAGE_(AMPEL): Traffic signal system (traffic light) ({selected} selected from {total})
+      OBERFLÄCHE: Surface ({selected} out of {total} selected)
+      POSITIVE_MELDUNG: Positive message ({selected} selected from {total})
+      RADWEGWEISUNG: Cycle route ({selected} out of {total})
+      SONSTIGE_HINWEISE: Other notes ({selected} selected from {total})
+      STRASSENBAUARBEITEN: Road Works ({selected} selected from {total})
+      VERKEHRSBESCHILDERUNG/MARKIERUNG/BELEUCHTUNG: Traffic signage/marking/lighting ({selected} out of {total})
+      VERKEHRSFÜHRUNG: Routing ({selected} selected from {total})
+filtering:
+  confirmation:
+    'no': Cancel
+    'yes': Reset
+footer:
+  content:
+    copyright: |-
+      Copyright {year} Climate Alliance. 
+      All rights reserved.
+    social:
+      label: Social Media CITY CYCLING
+      mediaOptions:
+        facebook:
+          icon: Facebook
+          link: https://www.facebook.com/
+        instagram:
+          icon: Instagram
+          link: https://www.instagram.com/
+        tumblr:
+          icon: Tumblr
+          link: https://www.tumblr.com/
+        twitter:
+          icon: Twitter
+          link: https://www.twitter.com/
+        youtube:
+          icon: Youtube
+          link: https://www.youtube.com/
+    toolLabel: |-
+      Radar! 
+      is a tool of Climate Alliance.
+global:
+  actions:
+    cancel: Abort
+    close: Close
+    closeModal: Close
+    coordinator:
+      merge:
+        label: Merge
+        unMerge: Separate
+    copy: copy code
+    copyDone: copied to the clipboard
+    create: Submit
+    createUser: Save
+    delete: Delete
+    deleteCoordinators: Remove as coordinator
+    deleteReporters: Remove as reporter
+    download: Download
+    fileType:
+      all: Both
+      label: Choose file type
+      shp: Shapefile
+      xlsx: Excel
+    filter: filter
+    goBack: Back
+    hover:
+      hideOnMap: Hide
+    login: Login
+    merge: Merge
+    newReport:
+      helper:
+        label: 'There are two ways to determine the exact location of your report:'
+        step1: Directly in the map
+        step2: By entering the address
+    register: Register
+    setAsCoordinator: Role coordinator
+    setAsReporters: Role reporter
+    status: Status
+    toggleVisibility: Toggle visibility
+    undo:
+      label: Reset
+    update: Save
+  collapseInfo: How it works
+  commune:
+    create:
+      label: Register for a fee
+  help:
+    label: More info
+  helper:
+    anon:
+      reports: ' It is up to the commune to decide whether all reports are shown on the map.'
+  infoLabel: More info
+  information:
+    export: >-
+      If you do not select the file type or municipality, the entire system data
+      will be exported.
+  pagination:
+    label: '{size}/Page'
+    total: Total {total}
+  report:
+    edit:
+      noMap: Please open the map
+      noMapContent: Please open the map, before editing a report
+  search:
+    action:
+      go: Go
+    address:
+      placeholder: Browse address
+  table:
+    pagination:
+      total: 'Total Reports: {total}'
+      totalCommune: 'Municipalities total: {total}'
+      usersTotal: ' Total users: {total}'
+  upload:
+    helper:
+      label: add a picture
+header:
+  callToActionText: How it works!
+  description: >-
+    Your municipality invites you to improve the cycling infrastructure. 
+
+    Simply enter a message on the map or on the go with the <span
+    class='rd-text-yellow-300 rd-font-medium'>CITY CYCLING app.</span>
+  title: Together for a better cycling infrastructure
+icon:
+  status:
+    ERLEDIGT: completed message
+    IN_BEARBEITUNG: Message is in progress
+    MEINE_MELDUNG: my reports
+    NEUTRALE_MELDUNG: neutral message
+    POSITIVE_MELDUNG: positive message
+    UNBEARBEITETE_MELDUNG: unedited message
+labels:
+  name: Name
+license:
+  form:
+    administration:
+      end:
+        inputLabel: End of the administration period
+      start:
+        header: Administrative period
+        inputLabel: Beginning of administration period
+        label: administrative period
+    reportingPeriod:
+      end:
+        inputLabel: End of reporting period
+      header:
+        label: Reporting period
+      start:
+        inputLabel: Start of reporting period
+        label: 'Reporting period:'
+  header:
+    label: Your RADar! license
+    renew:
+      label: Extend booking
+map:
+  coordinator:
+    actions:
+      showMap:
+        closeLabel: Close Map
+        label: Open Map
+  errors:
+    attachment:
+      attachmentIdMissing: Attachment file not found
+      deleteSuccess: Attachment removed from report
+      filesize: |-
+        Add images (max 3MB/file). 
+        Please make sure that no people are recognizable in the pictures.
+      genericError: Report attachment cannot be updated
+      maxLimit: A maximum of 3 images can be attached.
+      reportIdMissing: Report attachment updated successfully
+      success: Report attachment updated successfully
+    create:
+      fail: Unable to create report this time, try again
+      missingRequiredFields: Please fill out all required fields to create a new report
+      success: Report created successfully
+  popup:
+    commune:
+      inactive:
+        description: Please contact the commune for more detail
+        title: The commune is currently inactive
+    content:
+      attachment: 'Attachments:'
+      comment: 'Description:'
+      commentsAdminLabel: 'Commune Admins notes:'
+      commentsLabel: 'Comments: '
+      coordinator:
+        title: Municipality note
+      formattedAddress: 'Nearest address:'
+      id: 'ID :'
+      location: 'Report location:'
+      reporter:
+        email: 'Email:'
+        firstName: 'FirstName:'
+        lastName: 'LastName:'
+        role: 'Role:'
+        title: Reporter Details
+        username: 'Username:'
+        uuid: 'UuId:'
+      status: 'Processing status:'
+      subTitle: 'General Information:'
+      timeStamp: 'Time Stamp :'
+      title: 'Report:'
+      workDuration: Processing time
+    likes: '{likes} confirmations'
+  useUserLocation:
+    label: Use my location
+menu:
+  administration: Administration
+  config: Configuration
+  contact: Contact
+  dashboard: Dashboard
+  dataExport: Export data
+  filter: Filter
+  newReport: New Report
+  ownReport: My reports
+  publicMap: Public Maps
+  report: Reports
+  reports:
+    DONE: Done ({view}/{total})
+    ICONS: Show legends
+    INPROGRESS: In progress ({view}/{total})
+    NEUTRALMESSAGE: Neutral Reports ({view}/{total})
+    POSITIVECONTENT: >-
+      <div class="map-wrapper-text-sm"> <strong>
+           @:{'menu.reports.POSITIVECONTENTTITLE'}.
+      </strong>
+
+      </div>
+
+      <div>
+
+      Later, during the reporting period, you can move the position of your own
+      report (by dragging and dropping) and add photos (click on the report,
+      then go to "Pictures").
+
+      </div>
+    POSITIVECONTENTTITLE: 'Total: {view} of {total} reports displayed'
+    POSITIVEMESSAGE: Positive reports ({view}/{total})
+    UNEDITED: Unedited ({view}/{total})
+mobile:
+  reports:
+    table:
+      attachmentLabel: open images
+      idLabel: 'ID:'
+      reasonLabel: 'Reason for notification:'
+profile:
+  update:
+    user:
+      profile:
+        bad-commune: unable to find commune with given uuid
+        success: Profile information updated successfully
+  user:
+    modal:
+      title: Update profile
+    title: User information
+public:
+  information:
+    card:
+      content: >-
+        <strong>Reports</strong> are only <strong>possible</strong> on the
+        territory/area of ​responsibility of the <strong>municipalities
+        participating in RADar!</strong>, i.e. within the dark line (in the case
+        of islands, for example, there may be several demarcation lines). 
+
+        <strong>Reports</strong> are only possible within the <strong>reporting
+        period</strong> set by the municipality.
+      title: 'PLEASE NOTE:'
+    list:
+      '1': >-
+        Click on "new message". 
+
+        Then put a marker/pin on the spot on the map to suggest an improvement
+        there - alternatively enter a message about the nearest address (if
+        possible with house number) in the address field
+      '2': >-
+        Under "Message Description/Message Reason" select the reason via a
+        category.
+      '3': >-
+        Additional information can be added as a note or more detailed
+        description of the message and/or an image can be uploaded.
+      '4': >-
+        Click on "Send message" - that's it! 
+
+        Your report will automatically be forwarded to the competent authority
+        in your municipality, which will take care of the matter and contact you
+        if necessary.
+    question: >-
+      Your report will automatically be forwarded to the competent authority in
+      your municipality, which will take care of the matter and contact you if
+      necessary.
+    title: How it works!
+  newComment:
+    hint: Please register or login to create reports
+  newReport:
+    hint: Please register or login to create reports.
+registration:
+  commune:
+    feedback:
+      success: |-
+        New commune was created. 
+        Thanks very much!
+    selectCommune:
+      btn: extend registration
+      label: 'Choose municipality:'
+    step2:
+      title: Required fields are marked with an *.
+    step3:
+      title: For the municipality registering person
+    step4:
+      title: Contact details of the local coordination
+    step5:
+      title: Invoice recipient
+    step6:
+      title: 'Only for districts/regions: Register associated cities/communities'
+    user:
+      address:
+        label: 'House no.:'
+        placeHolder: House no.
+      addressExtend:
+        label: 'Address supplement:'
+        placeHolder: Address supplement...
+      department:
+        label: 'Department/Department:'
+        placeHolder: Department...
+      email:
+        label: 'E-mail:'
+        placeHolder: email.example
+      firstName:
+        label: 'First name:'
+        placeHolder: First name...
+      function:
+        label: 'Function:'
+        placeHolder: Function...
+      institution:
+        helper: if not working for the municipality
+        label: 'Institution:'
+        placeHolder: E.g. "The"
+      lastName:
+        label: 'Surname:'
+        placeHolder: Last name...
+      password:
+        label: 'Password:'
+        placeHolder: Password...
+      place:
+        label: 'Postcode / town:'
+        placeHolder: location
+        zipPlaceHolder: Postcode
+      pronouns:
+        label: 'Salutation:'
+        placeHolder: '-- Please choose --'
+      telephone:
+        PlaceHolder: No.
+        areaPlaceHolder: Phone prefix
+        label: 'Phone:'
+      title:
+        label: 'Title:'
+        placeHolder: (No)
+report:
+  action:
+    create:
+      selectCommune:
+        description: Please select an active commune
+        title: Please select a commune
+  attachment:
+    modal:
+      title: Image attachments from the Report
+  comment:
+    action:
+      delete:
+        message: Do you really want to delete the comment
+        'no': 'No'
+        title: Confirm to delete comment
+        'yes': Delete
+      edit:
+        cancel: Cancel
+        title: Edit comment
+        update: Update
+  coordinator:
+    edit:
+      actions:
+        cancel: Cancel
+        delete: Delete Report?
+        save: Update
+        saveAndClose: Save and close
+      period:
+        label: 'Implementation time:'
+        placeholder: No information
+      status:
+        label: 'Processing status:'
+        placeholder: In processing
+      title: Edit Report
+    tabs:
+      FORWARDMESSAGES: Forward messages
+      HISTORY: History
+      IDENTICALREPORT: Identical message
+      NOTES: Notes
+      REMARK: Remark
+      content:
+        duplicate:
+          infoLabel: >-
+            This message becomes the main message. 
+
+            The reports selected as identical are no longer visible on the
+            public map.
+        noteInformationContent: publicly visible, even if the reports are generally publicly visible
+        noteInformationLabel: publicly visible, even if the reports are generally publicly visible
+        notePlaceholder: Enter comment...
+        noteTitle: Remarks
+        notesInformationContent: Helper notes **Need update**
+        notesInformationLabel: Not public
+        notesPlaceholder: Enter note...
+        notesTitle: Coordinator notes
+  create:
+    collapse:
+      NEWREPORTFORM: New Report
+      NEWREPORTFORMEXTRAINFO: More information about your report
+      NEWREPORTFORMPICTURES: Upload photos
+      NEWREPORTFORMREASON: Report reason
+      UPDATEREPORTFORM: 'Update report: {reportId}'
+      UPDATEREPORTFORMEXTRAINFO: Report Description
+      UPDATEREPORTFORMPICTURES: Upload photos
+      UPDATEREPORTFORMREASON: Report reason
+      UPDATEREPORTFORMSTATUS: Update status message
+    errors:
+      outOfCommuneClick: danger
+      outOfCommuneContent: Current address out of jurisdiction!
+    form:
+      address: 'Nearest address:'
+      addressPlaceholder: street, town, community
+      attachmentHelpText: |-
+        Add images (max 3MB/file). <br/>
+        Please make sure that no people are recognizable in the pictures.
+      commentHelpText: >-
+        Keep it as short and keyword-like as possible - still {count}
+        characters.
+      commentMaxReached: Reached the maximum amount of text allowed
+      commentPlaceholder: Keep it as short and keyword-like as possible - xxx characters left
+      latitude: 'Latitude:'
+      latitudePlaceholder: 'Format example: 50.082251'
+      longitude: 'Longitude:'
+      longitudePlaceholder: 'Format example: 8.624607'
+      search: Search
+  delete:
+    confirmation:
+      cancel: Cancel
+      confirm: Delete this Report
+      content: ' This action cannot be undone. This will permanently delete the  report wih id {reportId}. '
+      coordinator:
+        content: Do you really want to delete the selected reports?
+        title: Are you absolutely sure?
+      title: Are you absolutely sure?
+  details:
+    address: Address
+    attachments: Attachments
+    id: ID
+    reasonCategoryName: Reason
+    timestamp: Date
+  errors:
+    attachment:
+      attachment:
+        file:
+          write-error: Please contact the municipal administration
+      attachmentIdMissing: Attachment file not found
+      deleteSuccess: Attachment removed from report
+      filesize: |-
+        Add images (max 3MB/file). 
+        Please make sure that no people are recognizable in the pictures.
+      genericError: Report attachment cannot be updated
+      maxLimit: A maximum of 3 images can be attached.
+      reportIdMissing: Unable to add attachment, the report does not exist
+      success: Report attachment updated successfully
+    comment:
+      maxNum:
+        reached: The maximum(3) amount of comment have been reached
+    commune:
+      check:
+        exists: Please check that you have selected a valid municipality
+    create:
+      fail: Unable to create report this time, try again
+      missingRequiredFields: Please fill out all required fields to create a new report
+      success: Report created successfully
+    person:
+      missing: 'Reporter uuid is missing '
+    reason-category:
+      missing: Please select a valid Report category
+    report:
+      create:
+        location-not-in-area: Location is outside of the boundaries of the current selected commune
+    update:
+      error: Unable to update the report
+      success: Report updated successfully
+    validation:
+      error: All the field are required
+  filter:
+    modal:
+      title: Filter reports options
+  merge:
+    confirmation:
+      content: The report with the id {report} will be the leading report
+    description: Select the leading report
+    identical:
+      child:
+        header: Identical messages
+      header: Select identical message and merge with it
+      label: 'Select identical message:'
+    title: Merge selected reports
+  unMerge:
+    confirmation:
+      confirm: Revert duplicates
+      content: >-
+        Please confirm, to undo all the duplicated reports that belows to the
+        report with the id {reportId}
+  useUserLocation:
+    label: Use my location
+  visibility:
+    confirmation:
+      confirm: Update visibility
+      content: 'The report with id: {reportId} will be hidden from all users'
+      contentVisible: 'The report with the ID: {reportId} will be visible to all users.'
+  warning:
+    confirmation:
+      confirm: Update all
+      content: All the selected reports will updated to the fallowing status {status}
+settings:
+  view:
+    commune:
+      archive:
+        action:
+          content: Please confirm to update the archive time frame
+        feedback:
+          success: Archived time-frame updated successfully!
+        information: 'Messages are archived and are no longer publicly visible after months:'
+        subtitle: |-
+          The status of the notification was set to "completed" or "neutral". 
+          The date when the report was submitted is decisive for archiving.
+        title: Archive
+      reasons:
+        action:
+          content: >-
+            Please confirm to set the reasons to visible/ no-visible for the
+            users!
+          title: ' Are you sure?'
+        feedback:
+          success: Reasons updated successfully!
+        information: Specify by clicking which report reasons are available to cyclists.
+        subtitle: Specify by clicking which report reasons are available to cyclists.
+        title: Select and deselect message reasons
+      status:
+        action:
+          content: All changes for the statuses for the commune will be save
+        confirmation: Update community contact information
+        feedback:
+          success: Status visibility updated succesfully!
+        information: >-
+          If the box is ticked, the reports can be viewed by your cyclists in
+          the login area and on the subpage of your municipality
+        subtitle: >-
+          Click to specify which reports are publicly viewable and with which
+          status.
+        title: Visibility status on map
+sidebar:
+  collapse:
+    label: show less
+  communes:
+    RD: Radar!
+    SR: city ​​cycling
+    active: Active
+    all: All
+    inactive: Inactive
+    main: Communes
+  dashboard: Dashboard
+  license: your license
+  myReports: My Reports
+  reports:
+    all: All ({count})
+    done: Done ({count})
+    main: Reports
+    neutral: Neutral ({count})
+    new: New ({count})
+    onProgress: On progress ({count})
+    positive: Positive ({count})
+  settings:
+    commune: Commune
+    contract: Contract
+    email: E-mail
+    main: Settings
+    map: Configure map
+    reports: Configure notifications
+  tools:
+    export: Export
+    import: Import
+    main: Tools
+  users:
+    all: All ({count})
+    coordinators: Coordinators ({count})
+    main: Users
+users:
+  coordinator:
+    actions:
+      newCoordinator:
+        button: New coordinator
+      newUser:
+        button: Create user
+      search:
+        button: Search user
+    header:
+      coordinatorLabel: Coordinators List
+      label: User Management
